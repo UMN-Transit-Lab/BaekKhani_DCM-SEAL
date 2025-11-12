@@ -1,0 +1,157 @@
+batch_size: 1356
+choice_mode: heterogeneous
+core_vars:
+- CO
+- TT
+- HE
+embedding_dims: !!python/object/apply:collections.OrderedDict
+- - - firstclass
+    - 2
+  - - tickettype
+    - 9
+  - - whopaid
+    - 4
+  - - luggage
+    - 3
+  - - seats
+    - 3
+embedding_labels: !!python/object/apply:collections.OrderedDict
+- - - firstclass
+    - !!python/tuple
+      - 2
+      - - firstclass_0
+        - firstclass_1
+  - - tickettype
+    - !!python/tuple
+      - 9
+      - - tickettype_annual
+        - tickettype_annulDisc
+        - tickettype_freeAfter7
+        - tickettype_halfDay
+        - tickettype_oneWay
+        - tickettype_oneWayDisc
+        - tickettype_other
+        - tickettype_twoWay
+        - tickettype_twoWayDisc
+  - - whopaid
+    - !!python/tuple
+      - 4
+      - - whopaid_employer
+        - whopaid_mixed
+        - whopaid_self
+        - whopaid_unknown
+  - - luggage
+    - !!python/tuple
+      - 3
+      - - luggage_none
+        - luggage_one
+        - luggage_several
+  - - seats
+    - !!python/tuple
+      - 3
+      - - seats_0
+        - seats_1
+        - seats_2
+embedding_mode: class-specific
+embedding_vars:
+- firstclass
+- tickettype
+- whopaid
+- luggage
+- seats
+learning_rate: 0.006523884497381782
+max_epochs: 50
+n_alternatives: 3
+n_latent_classes: 3
+non_positive_core_vars:
+- CO
+- TT
+- HE
+random_state: 5723588
+segmentation_dropout_rate: 0.14385650719974863
+segmentation_hidden_dims:
+- 128
+- 128
+- 256
+segmentation_net_dims:
+- 62
+- 128
+- 128
+- 256
+- 3
+segmentation_vars:
+- age_25to39
+- age_40to54
+- age_55to65
+- age_less25
+- age_morethan65
+- male_0
+- male_1
+- income_50to100
+- income_over100
+- income_under25
+- income_under50
+- income_unknown
+- seasonalticket_0
+- seasonalticket_1
+- purpose_business
+- purpose_leisure
+- purpose_other
+- purpose_rfB
+- purpose_rfL
+- purpose_rfS
+- purpose_rfW
+- purpose_shop
+- purpose_work
+- oricanton_AG
+- oricanton_AR
+- oricanton_BE
+- oricanton_BS
+- oricanton_FR
+- oricanton_GE
+- oricanton_GL
+- oricanton_GR
+- oricanton_LU
+- oricanton_SG
+- oricanton_SZ
+- oricanton_Schaffhausen
+- oricanton_TH
+- oricanton_TI
+- oricanton_VD
+- oricanton_VS
+- oricanton_ZG
+- oricanton_ZH
+- descanton_AG
+- descanton_AI
+- descanton_AR
+- descanton_BE
+- descanton_BL
+- descanton_BS
+- descanton_FR
+- descanton_GE
+- descanton_GR
+- descanton_JU
+- descanton_LU
+- descanton_SG
+- descanton_SO
+- descanton_SZ
+- descanton_Schaffhausen
+- descanton_TH
+- descanton_TI
+- descanton_VD
+- descanton_VS
+- descanton_ZG
+- descanton_ZH
+segmentation_vars_categorical:
+- age
+- male
+- income
+- seasonalticket
+- purpose
+- oricanton
+- descanton
+segmentation_vars_continuous: []
+test_size: 0.2
+train_size: 27108
+weight_decay_embedding: 0.00010153121787322065
+weight_decay_segmentation: 0.00026214676065396076

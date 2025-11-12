@@ -1,0 +1,82 @@
+batch_size: 625
+choice_mode: heterogeneous
+core_vars:
+- x1
+- x2
+- x3
+embedding_dims: !!python/object/apply:collections.OrderedDict
+- - - s1
+    - 3
+  - - s2
+    - 3
+  - - o1
+    - 4
+  - - e1
+    - 3
+  - - e2
+    - 3
+embedding_labels: !!python/object/apply:collections.OrderedDict
+- - - s1
+    - !!python/tuple
+      - 3
+      - - s1_s11
+        - s1_s12
+        - s1_s13
+  - - s2
+    - !!python/tuple
+      - 3
+      - - s2_s21
+        - s2_s22
+        - s2_s23
+  - - o1
+    - !!python/tuple
+      - 4
+      - - o1_o11
+        - o1_o12
+        - o1_o13
+        - o1_o14
+  - - e1
+    - !!python/tuple
+      - 3
+      - - e1_e11
+        - e1_e12
+        - e1_e13
+  - - e2
+    - !!python/tuple
+      - 3
+      - - e2_e21
+        - e2_e22
+        - e2_e23
+embedding_mode: class-specific
+embedding_vars:
+- s1
+- s2
+- o1
+- e1
+- e2
+learning_rate: 0.06476088124825813
+max_epochs: 50
+n_alternatives: 2
+n_latent_classes: 1
+non_positive_core_vars:
+- x1
+- x2
+- x3
+random_state: 5723588
+segmentation_dropout_rate: 0.11211077896389883
+segmentation_hidden_dims:
+- 64
+- 256
+- 256
+segmentation_net_dims:
+- 0
+- 64
+- 256
+- 256
+- 1
+segmentation_vars: []
+segmentation_vars_categorical: []
+test_size: 0.2
+train_size: 25000
+weight_decay_embedding: 0.00015399292345012012
+weight_decay_segmentation: 0.0002788925491528801
