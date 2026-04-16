@@ -2,7 +2,7 @@
 
 **Discrete Choice Model with Segmentation & Embedding via Adaptive Learning**
 
-This repository accompanies the academic paper **"A Generalized Discrete Choice Model with Segmentation and Embedding via AI-Learning (DCM-SEAL)"** (`BaekKhani2025_DCMSEAL.pdf`). The code operationalizes the modeling framework described in the paper by combining **latent-class segmentation, class-specific embeddings, and interpretable linear-in-parameter utilities** within a PyTorch Lightning workflow.
+This repository accompanies the academic paper **"A Discrete Choice Model with Segmentation and Embedding via AI-Learning (DCM-SEAL)"** (`BaekKhani2026_DCMSEAL.pdf`). The code operationalizes the modeling framework described in the paper by combining **latent-class segmentation, class-specific embeddings, and interpretable linear-in-parameter utilities** within a PyTorch Lightning workflow.
 
 ---
 
