@@ -1,8 +1,8 @@
 # DCM-SEAL
 
-**Discrete Choice Model with Segmentation & Embedding via Adaptive Learning**
+**Discrete Choice Model with Segmentation and Embedding-Augmented Learning**
 
-This repository accompanies the academic paper **"A Discrete Choice Model with Segmentation and Embedding via AI-Learning (DCM-SEAL)"** (`BaekKhani2026_DCMSEAL.pdf`). The code operationalizes the modeling framework described in the paper by combining **latent-class segmentation, class-specific embeddings, and interpretable linear-in-parameter utilities** within a PyTorch Lightning workflow.
+This repository accompanies the academic paper **"A Discrete Choice Model with Segmentation and Embedding-Augmented Learning for Travel Behavior Analysis"** (`BaekKhani2026_DCMSEAL.pdf`). The code operationalizes the modeling framework described in the paper by combining **latent-class segmentation, class-specific embeddings, and interpretable linear-in-parameter utilities** within a PyTorch Lightning workflow.
 
 ---
 
@@ -37,7 +37,7 @@ The project is tested with **Anaconda Python 3.12**. To reproduce the environmen
 
 ```text
 .
-├── BaekKhani2025_DCMSEAL.pdf       # Full academic manuscript
+├── BaekKhani2026_DCMSEAL.pdf       # Full academic manuscript
 ├── README.md                       # Project overview & instructions
 ├── data/Synthesized                # Input dataset: Synthesized
 │   ├── genSynthData.py             # Synthetic data generator (Appendix A)
@@ -100,5 +100,5 @@ It is currently designed to run on an IDE (e.g., VB Studio, Spyder, Jupyter) and
 
 ## Contact
 
-**Kwangho Baek**  
+**Kwangho Baek, Ph.D.**  
 baek0040@umn.edu · dptm22203@gmail.com
